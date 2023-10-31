@@ -1,0 +1,152 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF3E7"
+    tools:context=".TelaCadastro">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="159dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="126dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/angry_btn"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_vc_borda"
+        android:text="Continuar com google"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginBottom="3dp"
+        android:text="Email"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/angry_btn" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/button_vc_borda"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="282dp"
+        android:layout_marginBottom="3dp"
+        android:text="Senha"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/button_vc_borda"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="220dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/button_verde"
+        android:shadowColor="#3F8640"
+        android:shadowRadius="5"
+        android:text="Cadastrar"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSenha" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="198dp"
+        android:layout_marginEnd="198dp"
+        android:layout_marginBottom="1dp"
+        android:text="ou"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCadastrar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="220dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/button_verde"
+        android:shadowColor="#3F8640"
+        android:shadowRadius="5"
+        android:text="Já tenho conta"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
